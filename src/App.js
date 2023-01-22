@@ -10,16 +10,15 @@ function App() {
       <div className="mb-2">
         <Navbar bg="primary" variant="dark">
           <Container>
-            <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+            <Navbar.Brand href="#home">Map me 😀</Navbar.Brand>
             <Nav className="me-auto">
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#features">Features</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
             </Nav>
           </Container>
         </Navbar>
       </div>
-      <div className="row m-5">
+      <div className="row m-1">
       <OpenMap />
       </div>
     </div>

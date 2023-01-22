@@ -1,4 +1,4 @@
-import { MapContainer, TileLayer, Marker, Popup  } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 function OpenMap() {
   return (
@@ -11,11 +11,17 @@ function OpenMap() {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
       />
-        <Marker position={[-15.41666667, 30.28333333]}>
-    <Popup>
-    Lusaka
-    </Popup>
-  </Marker>
+      <Marker position={[-15.41666667, 28.28333333]}>
+        <Popup>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Downtown_Lusaka.JPG/1920px-Downtown_Lusaka.JPG"
+            alt=""
+            width="200"
+            height="200"
+          />
+          <p>Lusaka</p>
+        </Popup>
+      </Marker>
     </MapContainer>
   );
 }
